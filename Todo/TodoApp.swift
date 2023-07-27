@@ -16,7 +16,7 @@ struct TodoApp: App {
         WindowGroup {
             NavigationStack {
                 ListView()
-            }.environmentObject(listViewModel)
+            }.navigationViewStyle(StackNavigationViewStyle()).environmentObject(listViewModel)
         }
     }
 }
